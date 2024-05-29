@@ -6,6 +6,7 @@ import { useState } from 'react';
 import ListOfAnimals from './components/ListOfAnimals';
 import InputLogger from './components/InputLogger';
 import State from './components/State';
+import CountDown from './components/CountDown';
 
 function App() {
   const [isLoading, setIsLoading] = useState(false)
@@ -21,6 +22,7 @@ function App() {
       <ListOfAnimals />
       <InputLogger />
       <State />
+      <CountDown hours={0} min={0} sec={30}/>
     </div>
   );
 }
