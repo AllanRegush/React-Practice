@@ -7,6 +7,9 @@ import ListOfAnimals from './components/ListOfAnimals';
 import InputLogger from './components/InputLogger';
 import State from './components/State';
 import CountDown from './components/CountDown';
+import CountProvider from './components/CountProvider';
+import Count from './components/Count';
+import CountButton from './components/CountButton';
 
 function App() {
   const [isLoading, setIsLoading] = useState(false)
@@ -23,6 +26,10 @@ function App() {
       <InputLogger />
       <State />
       <CountDown hours={0} min={0} sec={30}/>
+      <CountProvider>
+        <Count />
+        <CountButton />
+      </CountProvider>
     </div>
   );
 }
